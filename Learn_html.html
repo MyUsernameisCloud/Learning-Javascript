@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <tittle>
+            Test for learning
+        </tittle>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h3 style="text-align: center">HTML PRACTICE</h3>
+        <div style="text-align: center"><img src="https://3-im.guokr.com/Vnm6D9Do2iKpQKfAa7PcWSH-014jXWPLYxMqPm0dyC68AgAADQQAAEpQ.jpg?imageView2/1/w/640/h/948"
+        width="300" height="400" alt="spider man" style="text-align: center"></div>
+
+        <h5 style="text-anchor: middle;font-family: monospace;text-align-last: center"> 表格</h5>
+        <div style="text-align:center">
+            <pre style="font-style: oblique">
+             每个表格从一个 table 标签开始。 
+             每个表格行从 tr 标签开始。
+             每个表格的数据从 td 标签开始。sdgzg 
+            </pre>
+        </div>
+        <div style="text-align: center">
+        <h4>两行三列:</h4>
+        <table border="2">
+            <caption>test table</caption>
+            <tr>
+                <th>head 1</th>
+                <th>head 2</th>
+                <th>head 3</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+
+        <h4>单元格跨两格:</h4>
+<table border="1">
+<tr>
+  <th>Name</th>
+  <th colspan="2">Telephone</th>
+</tr>
+<tr>
+  <td>Bill Gates</td>
+  <td>555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</table>
+​
+<h4>单元格跨两列:有单元格边距</h4>
+<table border="1" 
+cellpadding="10">
+<tr>
+  <th>First Name:</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th rowspan="2">Telephone:</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
+</div>
+<dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+        </dl>
+
+        <p><b>注意：</b> 在 HTML 4中 ul 属性已废弃，HTML5 已不支持该属性，因此我们使用 CSS 代替来定义不同类型的无序列表如下：</p>
+
+<h4>圆点列表：</h4>
+<ul style="list-style-type:disc">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul>  
+
+<h4>圆圈列表：</h4>
+<ul style="list-style-type:circle">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul>  
+
+<h4>正方形列表：</h4>
+<ul style="list-style-type:square">
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul>
+
+
+<h4>嵌套列表：</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea
+        <ul>
+          <li>China</li>
+          <li>Africa</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<hr>
+
+<p>
+  网页 <span style="color:blue">布局</span>
+</p>
+
+<div id="container" style="width:500px">
+ 
+  <div id="header" style="background-color:#FFA500;">
+  <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+   
+  <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+  <b>菜单</b><br>
+  HTML<br>
+  CSS<br>
+  JavaScript</div>
+   
+  <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+  内容在这里</div>
+   
+  <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+  版权 © runoob.com</div>
+  </div>
+  <hr>
+  <form action="">
+    <input type="radio" name="sex" value="male">Male<br>
+    <input type="radio" name="sex" value="female">Female
+    </form>
+
+    <form action="">
+      <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+      <input type="checkbox" name="vehicle" value="Car">I have a car 
+      </form>
+
+      <form action="">
+        <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+        </form>
+
+        <h6>预选下拉列表</h6>
+        <form action="">
+          <select name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat" selected>Fiat</option>
+          <option value="audi">Audi</option>
+          </select>
+          </form>
+
+          <textarea rows="10" cols="30">
+            我是一个文本框。
+            </textarea>
+
+            <form action="">
+              <input type="button" value="Hello world!">
+              </form>
+              
+              <h6>带边框的表单</h6>
+              <form action="">
+                <fieldset>
+                <legend>Personal information:</legend>
+                Name: <input type="text" size="30"><br>
+                E-mail: <input type="text" size="30"><br>
+                Date of birth: <input type="text" size="10">
+                </fieldset>
+                </form>
+
+
+                <form action="demo-form.php" method="get">
+                  <input type="checkbox" name="vehicle[]" value="Bike"> I have a bike<br>
+                  <input type="checkbox" name="vehicle[]" value="Car" checked="checked"> I have a car<br>
+                  <input type="submit" value="提交">
+                </form>
+
+
+                <h3>发送邮件到 someone@example.com:</h3>
+
+<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name" value="your name"><br>
+E-mail:<br>
+<input type="text" name="mail" value="your email"><br>
+Comment:<br>
+<input type="text" name="comment" value="your comment" size="50"><br><br>
+<input type="submit" value="发送">
+<input type="reset" value="重置">
+</form>
+
+<hr>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output name="x" for="a b"></output>
+  </form>
+  <p><strong>注意:</strong>  Internet Explorer 不支持 output 标签。</p>
+
+  <div style="text-align: center">
+  <form action="demo-form.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+    </form>
+    
+    <p><strong>注意:</strong> Internet Explorer 9（更早 IE 版本），Safari 不支持 datalist 标签。</p>
+  </div>
+
+  <H5>Iframe 框架 </H5>
+  <iframe src="https://www.runoob.com/html/html-iframes.html" width="1500" height="600" frameborder="5">
+    <p>您的浏览器不支持  iframe 标签。</p>
+   </iframe>
+
+   <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+
+<p><b>注意：</b> 因为 a 标签的 target 属性是名为 iframe_a 的 iframe 框架，所以在点击链接时页面会显示在 iframe框架中。</p>
+
+<hr>
+<div style="text-align: center">
+  <p style="background-color:rgb(255,255,0)">
+    通过 rbg 值设置背景颜色
+    </p>
+    <p style="background-color:rgba(255,255,0,0.25)">
+    通过 rbg 值设置背景颜色
+    </p>
+    <p style="background-color:rgba(255,255,0,0.5)">
+    通过 rbg 值设置背景颜色
+    </p>
+    <p style="background-color:rgba(255,255,0,0.75)">
+    通过 rbg 值设置背景颜色
+    </p>
+  </div>
+
+  <hr>
+  <script>
+    document.write("Hello World!")
+    </script>
+    <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+
+    <p id="demo">
+      JavaScript 可以触发事件，就像按钮点击。</p>
+      <hr>
+      <p id="demo2">
+        JavaScript 能改变 HTML 元素的样式。比如颜色
+        </p>
+      
+      <script>
+      function myFunction()
+      {
+        x = document.getElementById("demo");
+        x.innerHTML="Hello JavaScript!";
+        x.style.color = "#ff0000"; 
+      }
+      </script>		
+      
+      <button type="button" onclick="myFunction()">点我</button>
+    </body>
+</html>
